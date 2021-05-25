@@ -1,0 +1,381 @@
+/*
+Theme Name: Megasoft
+Theme URI: https://wordpress.org/themes/Megasoft/
+Author: Long Thanh Vu
+Author URI: https://wordpress.org/
+Description: Trang giới thiệu công ty
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 5.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mega
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+/*CSS TRANG TIN TỨC */
+
+.post{
+    overflow: hidden;
+    border-top: 1px solid #e7e7e7;
+}
+
+.post .entry-thumbnail{
+    margin: 2.2em 2em 1em 0;
+    width: 150px;
+    float: left;
+}
+
+.post .post-thumbnail{
+    margin:0;
+}
+
+/* .post .entry-content,
+.post .entry-header{
+    padding-left: 180px;
+} */
+
+.wp-block-latest-posts__featured-image{
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.wp-block-latest-posts__post-full-content{
+    font-size: 20px !important;
+    float:right !important;
+}
+
+.section-news{
+    display: flex !important;
+    text-align: center !important;
+}
+
+.the-article-body{
+    padding-bottom: 100px ;
+    border-bottom: 1px solid #2692FC
+}
+
+
+/* Tác Gỉa */
+.author-box{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px 0px;
+}
+
+.author-box h3{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.author-box img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.entry-meta{
+    padding: 10px 0 10px 0;
+}
+
+.entry-meta a{
+    text-decoration: unset;
+}
+
+.category{
+    padding-left: 10px;
+}
+.date-published{
+    padding-left: 10px;
+}
+
+.date-published a{
+    user-select: unset;
+}
+
+.Read.All.Comment {
+    float: right;
+}
+
+#comments{
+    font-size: 20px;
+    padding: 20px 20px 10px 20px;
+}
+
+.commentlist{
+    list-style: none;
+}
+
+.commentlist li{
+    border-bottom: 1px solid #2692FC;
+}
+
+.comment-body img{
+    border-radius: 50%;
+}
+
+.comment-body{
+    padding: 10px 20px 10px 20px;
+}
+
+.comment-body h5 , p {
+    margin-left: 30px;
+    color: #333;
+}
+
+.url {
+    padding-left: 10px;
+}
+
+.comment-metadata{
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+}
+
+.comment-edit-link{
+    float: right;
+    padding-right: 10px;
+}
+
+.boder-comment{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.the-article-summary{
+    padding-top: 40px;
+}
+/* // Khung Tra Loi  */
+
+#respond h3{
+    margin-left: 20px;
+}
+
+.form-submit{
+    padding-bottom: 20px;
+}
+
+.comment-form-comment label{
+    padding-right: 20px;
+}
+
+.comment-form-comment textarea{
+    outline-color: #2692FC;
+    width: 80%;
+}
+
+.form-submit{
+    text-align: center;
+}
+
+.submit{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #2692FC;
+}
+
+.submit:hover{
+    border: none;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(rgba(38, 146, 252, 100), rgba(49, 203, 248, 100));
+}
+
+.children{
+    list-style: none;
+    padding-left: 60px ;
+}
+
+.comment.byuser.comment-author-ltv1603.bypostauthor.even.depth-2 li{
+    list-style: none !important;
+}
+
+/* Page */
+
+.wp-block-latest-posts__list.has-dates.has-author.wp-block-latest-posts li{
+    padding-top: 50px;
+}
+
+.wp-block-latest-posts__list.has-dates.has-author.wp-block-latest-posts a{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.wp-block-latest-posts__list.has-dates.has-author.wp-block-latest-posts img{
+    border-radius: 10%;
+    border: #2692FC 1px solid;
+    float: left;
+}
+
+.wp-block-latest-posts__post-author,
+.wp-block-latest-posts__post-date{
+    float: right;
+    padding: 10px;
+}
+
+.author-share iframe{
+    float: right;
+}
+/* Form contact */
+/* .wpcf7{
+    width: 400px;
+    margin-left: 350px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.wpcf7-form p{
+    margin-left: unset;
+    margin-bottom: unset;
+    padding-top: 10px;
+}
+
+.wpcf7-form label{
+    font-weight: bold;
+    padding-top: 20px;
+} 
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
+    width: 100%;
+    padding-top: 10px;
+    outline-color: #2692FC;
+}
+
+.wpcf7-form-control.wpcf7-textarea{
+    outline-color: #2692FC;
+}
+
+.wpcf7-form-control.wpcf7-submit{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #2692FC;
+    margin-left: 70px;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover{
+    border: none;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(rgba(38, 146, 252, 100), rgba(49, 203, 248, 100));
+}
+
+.wpcf7-form.init {
+    width: 400px;
+}
+.wpcf7-form.init p{
+    width: 400px;
+    padding: unset;
+} */
+
+/* End contact form */
+
+.wpforms-field.wpforms-field-name{
+    padding-top: 20px !important;
+}
+.wpforms-field.wpforms-field-name input{
+    margin: 0 20px !important;
+    max-width: 92% !important;
+}
+
+.wpforms-error{
+    padding-left: 20px !important;
+    padding-top: 10px !important;
+}
+
+.wpforms-field.wpforms-field-email input{
+    max-width: 92% !important;
+    margin: 0 20px !important;
+}
+
+.wpforms-field.wpforms-field-textarea textarea{
+    max-width: 92% !important;
+    margin: 0 20px !important;
+}
+
+.wpforms-field-label{
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+}
+
+.wpforms-submit {
+        border-radius: 5px !important;
+        border: none;
+        color: #ffff !important;
+        font-size: 15px;
+        font-weight: bold;
+        background: linear-gradient(rgba(38, 146, 252, 100), rgba(49, 203, 248, 100)) !important;
+        width: 140px !important;
+}
+
+.wpforms-container-full .wpforms-form .wpforms-submit-container {
+    padding: 10px 0 0 20px !important;
+    clear: both;
+    position: relative;
+}
+
+/* Tin Tức */ 
+@media (min-width:1290px){
+.news{
+    flex-direction: column-reverse;
+    padding: 50px 20px;
+}
+
+.news a,
+.news h1{
+    text-decoration: none;
+    color: #2692FC;
+    padding-top: 3px;
+}
+
+.news h1{
+    font-size: 25px;
+}
+
+.news p ,.news a{
+    color: #333;
+}
+
+.news p{
+    border-bottom: 1px solid #2692FC;
+    text-decoration: none;
+    height: 100%;
+    padding-bottom: 100px !important;
+    margin-left: 30%;
+}
+
+.read-more{
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.read-more:hover{
+    color: #2692FC;
+}
+
+.post-thumbnail{
+    float: left;
+    height: 100%;
+    width: 30%;
+    padding-top: 20px;
+}
+
+.post-thumbnail img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-thumbnail img:hover{
+    opacity: 0.9;
+}
+}
+/* End Tin Tức */
