@@ -153,21 +153,58 @@ add_filter('excerpt_more', 'mega_readmore');
 
 // Pagination Phân Trang 
 
-if ( !function_exists('mega_pagination')){
-    function mega_pagination(){
-        if ( $GLOBALS['wp_query']->max_num_posts < 2 ){
-            return '';
-        } ?>
-        <nav class="pagination" role="navigation">
-            <?php if ( get_next_post_link() ): ?>
-                <div class="prev"> <?php next_posts_link(__('older post', 'mega')); ?></div>
-            <?php endif; ?>
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
 
-            <?php if ( get_previous_post_link() ): ?>
-                <div class="next"> <?php previous_posts_link(__('newest post', 'mega')); ?></div>
-            <?php endif; ?>
-        </nav>
-    <?php }
+    if (empty($pagerange)) {
+        $pagerange = 3;
+    }
+
+    global $paged;
+    if (empty($paged)) {
+        $paged = 1;
+    }
+    if ($numpages == '') {
+        global $wp_query;
+        $numpages = $wp_query->max_num_pages;
+        if(!$numpages) {
+        $numpages = 1;
+    }
+    }
+
+    $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+    );
+
+    $paginate_links = paginate_links($pagination_args);
+
+    if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+        echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+        echo $paginate_links;
+    echo "</nav>";
+    }
+
 }
 
-add_post_type_support( 'page', 'excerpt' );
+// Custom Img Page 
+$args = array (
+    'default-image' => get_template_directory_uri().'/assets/images/MaskGroup1.png',
+    'default-text-color' => '000',
+    'width' => 1920,
+    'height' => 555,
+    'flex-width' => true,
+    'flex-height' => true,
+);
+    add_theme_support('custom-header', $args);

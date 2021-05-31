@@ -30,13 +30,13 @@
                     </div>
                     <div class="row pb-lg-5">
                         <div class="col-xl-6 pt-xl-5 col-md-6 col-sm-12 text-center">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/2.png" alt="" height="360px" width="360px" class="section-two-img">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/1.png" alt="" height="360px" width="360px" class="section-two-img">
                         </div>
                         <div class="col-xl-6 pt-xl-5 col-md-6 col-sm-12 text-center">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/2.png" alt="" height="360px" width="360px" class="section-two-img">
                         </div>
                         <div class="col-xl-6 pt-xl-5 col-md-6 col-sm-12 text-center">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/2.png" alt="" height="360px" width="360px" class="section-two-img">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/3.png" alt="" height="360px" width="360px" class="section-two-img">
                         </div>
                         <div class="col-xl-6 pt-xl-5 col-md-6 col-sm-12 text-center">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/2.png" alt="" height="360px" width="360px" class="section-two-img">
@@ -171,18 +171,18 @@
                 <h1 class="section-two-product-head_h1"> Đối Tác </h1>
             </div>
             <div class="row mt-lg-5 pb-lg-5">
-                <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2500.png" alt="" height="264px" width="264px" class="section-five-img">
-                </div>
-                <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2501.png" alt="" height="264px" width="264px" class="section-five-img">
-                </div>
-                <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2502.png" alt="" height="264px" width="264px" class="section-five-img">
-                </div>
-                <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2503.png" alt="" height="264px" width="264px" class="section-five-img">
-                </div>
+                    <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2500.png" alt="" height="264px" width="264px" class="section-five-img">
+                    </div>
+                    <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2501.png" alt="" height="264px" width="264px" class="section-five-img">
+                    </div>
+                    <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2502.png" alt="" height="264px" width="264px" class="section-five-img">
+                    </div>
+                    <div class="col-xl-3 col-md-6 ml-sm-auto text-center mt-sm-5 mt-md-5 col-sm-12">
+                        <img src="<?= get_template_directory_uri() ?>/assets/images/Group 2503.png" alt="" height="264px" width="264px" class="section-five-img">
+                    </div>
             </div>
         </div>
         <!-- End Section 5 -->

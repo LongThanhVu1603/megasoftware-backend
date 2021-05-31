@@ -279,6 +279,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* End contact form */
 
+/* Form */
 .wpforms-field.wpforms-field-name{
     padding-top: 20px !important;
 }
@@ -323,7 +324,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
     position: relative;
 }
 
-/* Tin Tức */ 
+#wpforms-confirmation-182{
+    height: 300px;
+    background-color: #fff;
+    align-items: center;
+}
+/* End Form  */
+
+/* Tin Tức Responsive */ 
+.news p{
+    border-bottom: 1px solid #2692FC;
+}
+
 @media (min-width:1290px){
 .news{
     flex-direction: column-reverse;
@@ -370,8 +382,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .post-thumbnail img {
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .post-thumbnail img:hover{
@@ -379,3 +393,74 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 }
 /* End Tin Tức */
+
+/* responsive */
+@media (max-width:414px){
+    .comment-body h5, p {
+        margin-left: 10px;
+    }
+    .alignnone.size-full.wp-image-201{
+        margin-top: 20px;
+    }
+
+    .comment-form-comment textarea {
+        width: 94%;
+    }
+    .attachment-medium.size-medium.wp-post-image{
+        padding-left: 40px;
+    }
+
+    .entry-title {
+        text-align: center;
+    }
+
+    .news a,
+    .news h1{
+        text-decoration: none;
+        color: #2692FC;
+        padding-top: 3px;
+    }
+
+    .news p ,.news a{
+        color: #333;
+    }
+    
+}
+
+/* end responsive */
+/* ============================================================
+CUSTOM PAGINATION
+============================================================ */
+.custom-pagination{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.custom-pagination span,
+.custom-pagination a {
+    display: inline-block;
+    padding: 2px 10px;
+}
+.custom-pagination a {
+    background-color: #ebebeb;
+    color: #2692FC;
+}
+.custom-pagination a:hover {
+    background-color:#0981fa;
+    color: #fff;
+}
+.custom-pagination span.page-num {
+    margin-right: 10px;
+    padding: 0;
+}
+.custom-pagination span.dots {
+    padding: 0;
+    color: gainsboro;
+}
+.custom-pagination span.current {
+    background-color: #2692FC;
+    color: #fff;
+}
+
+/* End Pagination */
+
